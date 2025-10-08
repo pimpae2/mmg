@@ -2,7 +2,7 @@
 function createSidebar(containerId) {
   const menuItems = [
     { link: "dashboard.html", icon: "fal fa-th-large", text: "หน้าแรก" },
-    { link: "project.html", icon: "fal fa-suitcase", text: "การบริการโครงการ" }, 
+    { link: "project.html", icon: "fal fa-suitcase", text: "การบริการโครงการ" },  
     {
       icon: "fal fa-flag",
       text: "อนุมัติโครงการ",
