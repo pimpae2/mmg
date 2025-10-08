@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="MMG">
+        <meta name="author" content="MMG"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" href="img/mmg-logo.png" />
+        
+        <title>MMG</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css"/>   
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>   
+        <link href="css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"/>  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </head>
+    <body> 
+        <div class="wrapper">
+            <div id="app" style="background-color: #c9c9c9;"></div>
+            <div class="main">
+                <div id="topbar"></div>
+                <main class="content">
+                    <div class="container-fluid p-0">
+                        <div class="col">
+                            <div class="row">
+                                <div class="text-hx">
+                                    <h4><i class="fal fa-suitcase"></i> เพิ่มโครงการ</h4>
+                                </div>
+                            </div>   
+                             
+                            
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header bg-primary text-white">
+                                    <span class="fw-bold">บันทึกผลการทดสอบ PO, PRI</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered align-middle text-center">
+                                            <thead class="table-secondary">
+                                                <tr>
+                                                    <th>Date of Test</th>
+                                                    <th>BATCH NO.</th>
+                                                    <th>LOT NO.</th>
+                                                    <th>Type</th>
+                                                    <th>Sample Bale No.</th>
+                                                    <th colspan="2">MV</th>
+                                                    <th colspan="3">PO</th>
+                                                    <th colspan="3">P30</th>
+                                                    <th>PRI (P30/PO)*100</th>
+                                                    <th>ผู้ทดสอบ</th>
+                                                    <th>ผู้ตรวจสอบ</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="text" class="form-control  " value="23/08/2025"></td>
+                                                    <td><input type="text" class="form-control  " value="163,164"></td>
+                                                    <td><input type="text" class="form-control  " value="M117A"></td>
+                                                    <td><input type="text" class="form-control  " value="MG"></td>
+                                                    <td><input type="text" class="form-control  " value="1"></td>
+                                                    <td><input type="text" class="form-control  " value="83.2"></td>
+                                                    <td><input type="text" class="form-control  " value="10.20"></td>
+                                                    <td><input type="text" class="form-control  " value="95.5"></td>
+                                                    <td><input type="text" class="form-control  " value="96.0"></td>
+                                                    <td><input type="text" class="form-control  " value="94.0"></td>
+                                                    <td><input type="text" class="form-control  " value="95.5"></td>
+                                                    <td><input type="text" class="form-control  " value="75.0"></td>
+                                                    <td><input type="text" class="form-control  " value="76.5"></td>
+                                                    <td><input type="text" class="form-control  " value="80.1"></td>
+                                                    <td><input type="text" class="form-control  " value="สายชล"></td>
+                                                    <td><input type="text" class="form-control  " value="สุภัตรา"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ส่วนที่ 2 -->
+                            <div class="card shadow-sm">
+                                <div class="card-header bg-success text-white">
+                                    <span class="fw-bold">บันทึกผลการทดสอบการละลายในโทลูอีน (Toluene)</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-3">
+                                            <label class="form-label">Batch No.</label>
+                                            <input type="text" class="form-control  " value="165">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Date of Test</label>
+                                            <input type="text" class="form-control  " value="22-23/08/2025">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Weight Sample</label>
+                                            <input type="text" class="form-control  " value="5.00">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Time Toluene</label>
+                                            <input type="text" class="form-control  " value="22.00">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mb-3">
+                                        <label class="form-label">ยางละลายเป็นเนื้อเดียวกัน</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" checked>
+                                            <label class="form-check-label">สีขาว/ใส</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">สีเหลือง/ใส</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">สีเหลืองขุ่น</label>
+                                        </div>
+                                        <input type="text" class="form-control   mt-2" placeholder="อื่นๆ โปรดระบุ Remark">
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col-md-3">
+                                            <label class="form-label">Weight sieve (1)</label>
+                                            <input type="text" class="form-control  " value="5.6197">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Weight sieve+Rubber (2)</label>
+                                            <input type="text" class="form-control  " value="5.7007">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Rubber insoluble in toluene (2-1)</label>
+                                            <input type="text" class="form-control  " value="0.081">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">%Rubber insoluble</label>
+                                            <input type="text" class="form-control  " value="1.62">
+                                        </div>
+                                    </div>
+                                    <div class="row g-3 mt-2">
+                                        <div class="col-md-3">
+                                            <label class="form-label">Gelting in Toluene</label>
+                                            <input type="text" class="form-control  " value="Good">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">ผู้ทดสอบ</label>
+                                            <input type="text" class="form-control  " value="สายชล">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">ผู้ตรวจสอบ</label>
+                                            <input type="text" class="form-control  " value="สุภัตรา">
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label class="form-label">Remark</label>
+                                        <textarea class="form-control  " rows="2">165 ไม่พบจุดบนแผ่นฟิล์ม มีการละลายของยางตามปกติ</textarea>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label class="form-label">รูปภาพ</label>
+                                        <input class="form-control  " type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    
+                            
+                        </div>
+                    </div>
+                </main> 
+            </div>
+        </div> 
+ 
+
+
+        <script src="js/jquery-3.5.1.min.js"></script>   
+        <script src="js/app.js"></script>  
+
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap5.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script src="js/bootstrap-datepicker.th.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+        <script src="js/leftMenu.js"></script>
+        <script src="js/navTop.js"></script> 
+        <script>   
+            createSidebar("app"); 
+            createNavTop("topbar"); 
+            $(document).ready(function() { 
+                $('.js-example-basic-multiple').select2();   
+                  
+
+                
+                $('.date').datepicker({ 
+                    language: 'th',
+                    format: 'dd-mm-yyyy',
+                    clearBtn: false, 
+                    calendarWeeks: false,
+                    autoclose: true,
+                    todayHighlight: true, 
+                    toggleActive: true
+                }); 
+                $('.timepicker').timepicker({
+                    showMeridian: true,
+                    minuteStep: 5,
+                    use24hours: true,
+                    timeFormat: 'H:i',
+                    defaultTime: 'current'
+                });
+            });   
+        </script> 
+       
+    </body>
+</html>

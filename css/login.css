@@ -1,0 +1,70 @@
+:root{ 
+  --bg-blue: #6CA0EB;  
+  --bg-main: #3399ff;  
+  --bg-red: #e55353;  
+  --bg-grey: #697A8D;
+  --bg-green: #59BA6F; 
+  --bg-orange: #FF7C03; 
+  --bg-black: #000000; 
+  --bg-yellow: #FFC531; 
+  --bg-pink: #FD5181; 
+  --bg-clear: #CC2D2D; 
+  --bg-primary-hover: #0019FE;  
+  --bg-danger: #F12300;
+  --bg-success: #1b9e3e; 
+  --bg-warning: #f9b115;
+  --bg-brown: #946300;
+  --bg-sky: #BDD6FA;
+  --bg-emerald: #07A7A7;
+  --bg-purple: #9A89FF;
+  --bg-primary2: #0029FF;
+  --bg-dark: #212631;
+  --bg-black2: #312F2F;
+  --bg-black3: #1C1B1F;
+  --bg-text2: #435971;
+  --bg-grey2: #828282;
+  --bg-brown2: #737373; 
+  --bg-body: #F5F5F5; 
+  --bg-white: #fff; 
+}
+a{
+  text-decoration: none !important; 
+}
+a:hover{
+  text-decoration: none;
+}
+body{
+  font-family: "Sarabun", serif;
+  background-color: var(--bg-body);  
+  height: 100%;
+}      
+html {
+  height: 100%;
+}
+.login-container {
+  height: 100vh;
+}
+.login-img {
+  background-image: url('../img/sesw.jpg');  
+  background-size: cover;
+  background-position: center;
+}
+.login-form {
+  padding: 3rem;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}  
+.form-container{
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  color: var(--bg-black2);
+}
+.form-label{
+  color: var(--bg-black2);
+}
+.form-container h2{
+  color: var(--bg-black2);
+}
