@@ -1,4 +1,3 @@
-// leftMenu.js
 function createSidebar(containerId) {
   const menuItems = [
     { link: "dashboard.html", icon: "fal fa-th-large", text: "หน้าแรก" },
@@ -38,12 +37,12 @@ function createSidebar(containerId) {
   let menuHTML = "";
   menuItems.forEach(item => {
     if (item.sub) {
-      const isSubActive = item.sub.some(sub => sub.link === currentPage);
+      const isSubActive = item.sub.some(sub => currentPage.startsWith(sub.link.replace(".html", "")));
       const showClass = isSubActive ? "show" : "";
       let subMenuHTML = "";
 
       item.sub.forEach(sub => {
-        const isActive = sub.link === currentPage ? "active" : "";
+        const isActive = currentPage.startsWith(sub.link.replace(".html", "")) ? "active" : "";
         subMenuHTML += `
           <a class="sidebar-link ${isActive}" href="${sub.link}">
             <span class="align-middle">${sub.text}</span>
@@ -64,7 +63,8 @@ function createSidebar(containerId) {
         </li>
       `;
     } else {
-      const isActive = item.link === currentPage ? "active" : "";
+      const baseName = item.link.replace(".html", "");
+      const isActive = currentPage.startsWith(baseName) ? "active" : "";
       menuHTML += `
         <li class="sidebar-item ${isActive}">
           <a class="sidebar-link" href="${item.link}">
