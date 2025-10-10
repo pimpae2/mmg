@@ -95,11 +95,19 @@
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered table-sm align-middle text-center">
-                                        <thead class="table-secondary">
+                                        <thead class="table-secondary">  
                                             <tr>
                                                 <th rowspan="2">Date of <br> Production</th>
                                                 <th rowspan="2">Date of Test</th>
-                                                <th rowspan="2">LOT NO</th>  
+                                                <th rowspan="2">LOT NO</th>
+                                                <th rowspan="2">BATCH NO.</th>
+                                                <th rowspan="2">Grade</th>
+                                                <th rowspan="2">DIRT</th>
+                                                <th rowspan="2">ASH<br><small>0.30 Max (MG)</small></th>
+                                                <th rowspan="2">N<sub>2</sub><br><small>0.50 Max (MG)</small></th>
+                                                <th rowspan="2">VM</th>
+                                                <th rowspan="2">PO</th>
+                                                <th rowspan="2">PRI</th>
                                                 <th rowspan="2">COL</th>
                                                 <th colspan="3">MV (MS 1+4)</th>
                                                 <th colspan="3">MV (ML 1+4)</th>
@@ -107,7 +115,12 @@
                                                 <th colspan="3">Gelling in toluene</th>
                                                 <th rowspan="2">%Free NR</th>
                                                 <th rowspan="2">%Free PMDMA<br><small>(11.5 Max)</small></th>
-                                                <th rowspan="2">%EPO</th> 
+                                                <th rowspan="2">%EPO</th>
+                                                <th rowspan="2">%Graft <br><small>28-32</small></th>
+                                                <th rowspan="2">Tensile</th>
+                                                <th rowspan="2">Modulus</th>
+                                                <th rowspan="2">Elongation</th>
+                                                <th rowspan="2">Hardness</th>
                                                 <th rowspan="2">&nbsp;</th>
                                             </tr>
                                             <tr>
@@ -127,7 +140,15 @@
                                             <tr>
                                                 <td>25/07/2025</td>
                                                 <td>26/07/2025</td>
-                                                <td>M113A</td>  
+                                                <td>M113A</td>
+                                                <td>158(30)</td>
+                                                <td>MG</td>
+                                                <td>-</td>
+                                                <td>0.13</td>
+                                                <td>0.06</td>
+                                                <td>0.26</td>
+                                                <td>89.0</td>
+                                                <td>85.96</td>
                                                 <td>50</td>
                                                 <td>80.2</td>
                                                 <td>86.9</td>
@@ -141,12 +162,17 @@
                                                 <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
                                                 <td><small>รอผล</small></td>
                                                 <td><small>รอผล</small></td>
-                                                <td>-</td> 
-                                                <td>
+                                                <td>-</td>
+                                                <td><small>รอผล</small></td>
+                                                <td><small>รอผล</small></td>
+                                                <td><small>รอผล</small></td>
+                                                <td><small>รอผล</small></td>
+                                                <td><small>รอผล</small></td>
+                                                <td> 
                                                     <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal">
                                                         <i class="fa-solid fa-eye"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
+                                                    <button class="btn btn-sm btn-outline-warning me-1 btn-edit" title="Edit">
                                                         <i class="fa-solid fa-pen-to-square"></i>
                                                     </button>
                                                     <button class="btn btn-sm btn-outline-danger" title="Delete">
@@ -157,7 +183,15 @@
                                             <tr>
                                                 <td>25/07/2025, 26/07/2025</td>
                                                 <td>27/07/2025</td>
-                                                <td>M113B</td>  
+                                                <td>M113B</td>
+                                                <td>158(4)+159(26)</td>
+                                                <td>MG</td>
+                                                <td>-</td>
+                                                <td>0.11</td>
+                                                <td>0.10</td>
+                                                <td>0.22</td>
+                                                <td>90.0</td>
+                                                <td>79.44</td>
                                                 <td>50</td>
                                                 <td>80.0</td>
                                                 <td>88.0</td>
@@ -171,192 +205,17 @@
                                                 <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
                                                 <td><small>รอผล</small></td>
                                                 <td><small>รอผล</small></td>
-                                                <td>-</td> 
-                                                <td>
+                                                <td>-</td>
+                                                <td><small>รอผล</small></td>
+                                                <td><small>รอผล</small></td>
+                                                <td><small>รอผล</small></td>
+                                                <td><small>รอผล</small></td>
+                                                <td><small>รอผล</small></td> 
+                                                <td> 
                                                     <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal">
                                                         <i class="fa-solid fa-eye"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-danger" title="Delete">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>25/07/2025</td>
-                                                <td>26/07/2025</td>
-                                                <td>M113A</td>  
-                                                <td>50</td>
-                                                <td>80.2</td>
-                                                <td>86.9</td>
-                                                <td>83.2</td>
-                                                <td>146.5</td>
-                                                <td>151.7</td>
-                                                <td>148.8</td>
-                                                <td>65</td> 
-                                                <td><small>ผ่านกรองหมด  Good</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td>-</td> 
-                                                <td>
-                                                    <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal">
-                                                        <i class="fa-solid fa-eye"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-danger" title="Delete">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>25/07/2025</td>
-                                                <td>26/07/2025</td>
-                                                <td>M113A</td>  
-                                                <td>50</td>
-                                                <td>80.2</td>
-                                                <td>86.9</td>
-                                                <td>83.2</td>
-                                                <td>146.5</td>
-                                                <td>151.7</td>
-                                                <td>148.8</td>
-                                                <td>65</td> 
-                                                <td><small>ผ่านกรองหมด  Good</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td>-</td> 
-                                                <td>
-                                                    <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal">
-                                                        <i class="fa-solid fa-eye"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-danger" title="Delete">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>25/07/2025</td>
-                                                <td>26/07/2025</td>
-                                                <td>M113A</td>  
-                                                <td>50</td>
-                                                <td>80.2</td>
-                                                <td>86.9</td>
-                                                <td>83.2</td>
-                                                <td>146.5</td>
-                                                <td>151.7</td>
-                                                <td>148.8</td>
-                                                <td>65</td> 
-                                                <td><small>ผ่านกรองหมด  Good</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td>-</td> 
-                                                <td>
-                                                    <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal">
-                                                        <i class="fa-solid fa-eye"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-danger" title="Delete">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>25/07/2025</td>
-                                                <td>26/07/2025</td>
-                                                <td>M113A</td>  
-                                                <td>50</td>
-                                                <td>80.2</td>
-                                                <td>86.9</td>
-                                                <td>83.2</td>
-                                                <td>146.5</td>
-                                                <td>151.7</td>
-                                                <td>148.8</td>
-                                                <td>65</td> 
-                                                <td><small>ผ่านกรองหมด  Good</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td>-</td> 
-                                                <td>
-                                                    <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal">
-                                                        <i class="fa-solid fa-eye"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-danger" title="Delete">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>25/07/2025</td>
-                                                <td>26/07/2025</td>
-                                                <td>M113A</td>  
-                                                <td>50</td>
-                                                <td>80.2</td>
-                                                <td>86.9</td>
-                                                <td>83.2</td>
-                                                <td>146.5</td>
-                                                <td>151.7</td>
-                                                <td>148.8</td>
-                                                <td>65</td> 
-                                                <td><small>ผ่านกรองหมด  Good</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td>-</td> 
-                                                <td>
-                                                    <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal">
-                                                        <i class="fa-solid fa-eye"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-danger" title="Delete">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>25/07/2025</td>
-                                                <td>26/07/2025</td>
-                                                <td>M113A</td>  
-                                                <td>50</td>
-                                                <td>80.2</td>
-                                                <td>86.9</td>
-                                                <td>83.2</td>
-                                                <td>146.5</td>
-                                                <td>151.7</td>
-                                                <td>148.8</td>
-                                                <td>65</td> 
-                                                <td><small>ผ่านกรองหมด  Good</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>ไม่พบจุดบนแผ่นฟิล์ม</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td><small>รอผล</small></td>
-                                                <td>-</td> 
-                                                <td>
-                                                    <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewModal">
-                                                        <i class="fa-solid fa-eye"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
+                                                    <button class="btn btn-sm btn-outline-warning me-1 btn-edit" title="Edit">
                                                         <i class="fa-solid fa-pen-to-square"></i>
                                                     </button>
                                                     <button class="btn btn-sm btn-outline-danger" title="Delete">
@@ -383,164 +242,10 @@
                         <h5 class="modal-title"><i class="fa-solid fa-table me-2"></i> รายละเอียดผลการทดสอบทั้งหมด</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                     </div>
-                    <div class="modal-body ">
-                        <h5>เลือก Checkbox สำหรับแสดงในหน้ารายการ</h5>
+                    <div class="modal-body "> 
                         <div class="table-responsive">
                             <table class="table table-bordered table-sm align-middle text-center">
-                                <thead class="table-secondary"> 
-                                    <tr>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main" checked> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th>
-                                        <th colspan="1" class="text-center">
-                                            <label style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                                                <input type="checkbox" name="show_main" id="show_main"> 
-                                            </label>
-                                        </th> 
-                                        <th rowspan="3">&nbsp;</th>
-                                    </tr>
+                                <thead class="table-secondary">  
                                     <tr>
                                         <th rowspan="2">Date of <br> Production</th>
                                         <th rowspan="2">Date of Test</th>
@@ -566,6 +271,7 @@
                                         <th rowspan="2">Modulus</th>
                                         <th rowspan="2">Elongation</th>
                                         <th rowspan="2">Hardness</th>
+                                        <th rowspan="2">&nbsp;</th>
                                     </tr>
                                     <tr>
                                         <th>MS Min</th>
@@ -613,7 +319,7 @@
                                         <td><small>รอผล</small></td>
                                         <td><small>รอผล</small></td>
                                         <td> 
-                                            <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
+                                            <button class="btn btn-sm btn-outline-warning me-1 btn-edit" title="Edit">
                                                 <i class="fa-solid fa-pen-to-square"></i>
                                             </button>
                                             <button class="btn btn-sm btn-outline-danger" title="Delete">
@@ -653,7 +359,7 @@
                                         <td><small>รอผล</small></td>
                                         <td><small>รอผล</small></td> 
                                         <td> 
-                                            <button class="btn btn-sm btn-outline-warning me-1" title="Edit">
+                                            <button class="btn btn-sm btn-outline-warning me-1 btn-edit" title="Edit">
                                                 <i class="fa-solid fa-pen-to-square"></i>
                                             </button>
                                             <button class="btn btn-sm btn-outline-danger" title="Delete">
@@ -669,6 +375,156 @@
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">
                         <i class="fa-solid fa-xmark me-1"></i> ปิด
                         </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Modal ฟอร์มแก้ไข ===== -->
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header  ">
+                        <h5 class="modal-title" id="editModalLabel">
+                            <i class="fa-solid fa-pen-to-square"></i> แก้ไขข้อมูลการทดสอบ
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- ====== ส่วนฟอร์มหลัก ====== -->
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header  ">
+                                <span class="fw-bold">บันทึกผลการทดสอบ PO, PRI</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="tablePOPRI" class="table table-bordered align-middle text-center">
+                                        <thead class="table-secondary">
+                                            <tr>
+                                                <th>Date of Test</th>
+                                                <th>BATCH NO.</th>
+                                                <th>LOT NO.</th>
+                                                <th>Type</th>
+                                                <th>Sample Bale No.</th>
+                                                <th colspan="2">MV</th>
+                                                <th colspan="3">PO</th>
+                                                <th colspan="3">P30</th>
+                                                <th>PRI (P30/PO)*100</th>
+                                                <th>ผู้ทดสอบ</th>
+                                                <th>ผู้ตรวจสอบ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" class="form-control" value="23/08/2025"></td>
+                                                <td><input type="text" class="form-control" value="163,164"></td>
+                                                <td><input type="text" class="form-control" value="M117A"></td>
+                                                <td><input type="text" class="form-control" value="MG"></td>
+                                                <td><input type="text" class="form-control" value="1"></td>
+                                                <td><input type="text" class="form-control" value="83.2"></td>
+                                                <td><input type="text" class="form-control" value="10.20"></td>
+                                                <td><input type="text" class="form-control" value="95.5"></td>
+                                                <td><input type="text" class="form-control" value="96.0"></td>
+                                                <td><input type="text" class="form-control" value="94.0"></td>
+                                                <td><input type="text" class="form-control" value="95.5"></td>
+                                                <td><input type="text" class="form-control" value="75.0"></td>
+                                                <td><input type="text" class="form-control" value="76.5"></td>
+                                                <td><input type="text" class="form-control" value="80.1"></td>
+                                                <td><input type="text" class="form-control" value="สายชล"></td>
+                                                <td><input type="text" class="form-control" value="สุภัตรา"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ====== ส่วนที่ 2 ====== -->
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-success text-white">
+                                <span class="fw-bold">บันทึกผลการทดสอบการละลายในโทลูอีน (Toluene)</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-3">
+                                        <label class="form-label">Batch No.</label>
+                                        <input id="batchNo" type="text" class="form-control" value="165">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Date of Test</label>
+                                        <input id="testDate" type="text" class="form-control" value="22-23/08/2025">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Weight Sample</label>
+                                        <input id="weightSample" type="text" class="form-control" value="5.00">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Time Toluene</label>
+                                        <input id="timeToluene" type="text" class="form-control" value="22.00">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="mb-3">
+                                    <label class="form-label">ยางละลายเป็นเนื้อเดียวกัน</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="chkWhite" checked>
+                                        <label class="form-check-label">สีขาว/ใส</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="chkYellow">
+                                        <label class="form-check-label">สีเหลือง/ใส</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="chkYellowCloudy">
+                                        <label class="form-check-label">สีเหลืองขุ่น</label>
+                                    </div>
+                                    <input id="remarkOther" type="text" class="form-control mt-2" placeholder="อื่นๆ โปรดระบุ Remark">
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-md-3">
+                                        <label class="form-label">Weight sieve (1)</label>
+                                        <input id="w1" type="text" class="form-control" value="5.6197">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Weight sieve+Rubber (2)</label>
+                                        <input id="w2" type="text" class="form-control" value="5.7007">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Rubber insoluble (2-1)</label>
+                                        <input id="insoluble" type="text" class="form-control" value="0.081">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">%Rubber insoluble</label>
+                                        <input id="percentInsoluble" type="text" class="form-control" value="1.62">
+                                    </div>
+                                </div>
+                                <div class="row g-3 mt-2">
+                                    <div class="col-md-3">
+                                        <label class="form-label">Gelting in Toluene</label>
+                                        <input id="gelting" type="text" class="form-control" value="Good">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">ผู้ทดสอบ</label>
+                                        <input id="tester" type="text" class="form-control" value="สายชล">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">ผู้ตรวจสอบ</label>
+                                        <input id="checker" type="text" class="form-control" value="สุภัตรา">
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="form-label">Remark</label>
+                                    <textarea id="remarkText" class="form-control" rows="2">165 ไม่พบจุดบนแผ่นฟิล์ม มีการละลายของยางตามปกติ</textarea>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="form-label">รูปภาพ</label>
+                                    <input id="fileInput" class="form-control" type="file">
+                                </div>
+                                <div class="text-end mt-4">
+                                    <button class="btn btn-secondary me-2" type="reset" data-bs-dismiss="modal">ยกเลิก</button>
+                                    <button id="btnSave" class="btn btn-primary" type="button">บันทึก</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -711,6 +567,17 @@
                     defaultTime: 'current'
                 });
             });   
+
+            $(document).ready(function() { 
+            $(document).on('click', '.btn-edit', function() {
+                $('#editModal').modal('show');
+            });
+ 
+            $('#btnSave').click(function() {
+                alert('ข้อมูลถูกบันทึกเรียบร้อย!');
+                $('#editModal').modal('hide');
+            });
+            });
         </script> 
        
     </body>

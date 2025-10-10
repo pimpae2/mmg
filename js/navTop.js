@@ -8,7 +8,7 @@ function createNavTop(containerId, user = {}) {
       <div class="navbar-collapse collapse">
         <ul class="navbar-nav navbar-align w-100 justify-content-between">
           <li class="nav-item nav-date text-center"> 
-            <img src="img/logo-app.png" alt="logo_fict" class="pc-x">
+            <img src="img/mmg2.png" alt="mmg2" class="pc-x">
           </li>
           <li class="nav-item dropdown">
             <!-- สำหรับ mobile -->
