@@ -392,7 +392,21 @@ legend{
 .table-sm td, .table-sm th {
   white-space: nowrap;
 }
-
+ 
+.pagination .page-link {
+  border-radius: 6px !important;
+  color: var(--main2);
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.pagination .page-item.active .page-link {
+  background-color: var(--main2);
+  border-color: var(--main2);
+  color: #fff;
+}
+.pagination .page-item.disabled .page-link {
+  color: #6c757d;
+}  
 
 /*
 transition: .33s all ease-out;  
