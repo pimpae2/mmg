@@ -1,340 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="MMG">
-        <meta name="author" content="MMG"> 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="shortcut icon" href="img/mmg-logo.png" />
-        
-        <title>MMG</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/app.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css"/>   
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>   
-        <link href="css/select2.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"/>  
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Certificate of Analysis - MMG</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     </head>
-    <body> 
-        <div class="wrapper">
-            <div id="app" style="background-color: #ffffff;"></div>
-            <div class="main">
-                <div id="topbar"></div>
-                <main class="content">
-                    <div class="container-fluid p-0">
-                        <div class="col">
-                            <div class="row">
-                                <div class="text-hx">
-                                    <h4><i class="far fa-file-alt"></i> ใบโหลดยาง</h4>
-                                </div>
-                            </div>   
-                             
-                             
-                            <div class="card mb-4 shadow-sm">
-                                <div class="card-header bg-primary text-white">
-                                    <span class="fw-bold">CERTIFICATE OF ANALYSIS</span>
-                                </div>
-                                <div class="card-body">
-                                    <form action="">
-                                        <div class="row g-3">
-                                            <div class="col-md-4">
-                                                <label class="form-label">Buyer:</label>
-                                                <input type="text" class="form-control" placeholder="Buyer">
-                                            </div> 
-                                            <div class="col-md-4">
-                                                <label class="form-label">Contract No:</label>
-                                                <input type="text" class="form-control" placeholder="Contract No">
-                                            </div> 
-                                            <div class="col-md-4">
-                                                <label class="form-label">Rubber Grade:</label>
-                                                <input type="text" class="form-control" placeholder="Rubber Grade">
-                                            </div> 
-                                            <div class="col-md-4">
-                                                <label class="form-label">Quantity (KGS.):</label>
-                                                <input type="text" class="form-control" placeholder="Quantity (KGS.)">
-                                            </div> 
-                                            <div class="col-md-4">
-                                                <label class="form-label">Packing:</label>
-                                                <input type="text" class="form-control" placeholder="Packing">
-                                            </div> 
-                                            <div class="col-md-4">
-                                                <label class="form-label">Factory Location:</label>
-                                                <input type="text" class="form-control" placeholder="Factory Location">
-                                            </div> 
-                                            <div class="col-md-4">
-                                                <label class="form-label">Destination:</label>
-                                                <input type="text" class="form-control" placeholder="Destination">
-                                            </div>  
-                                            <div class="col-md-4">
-                                                <label class="form-label">Date of Production:</label>
-                                                <input type="text" class="form-control" placeholder="Date of Production">
-                                            </div>  
-                                            <div class="col-md-4">
-                                                <label class="form-label">Date Tested:</label>
-                                                <input type="text" class="form-control" placeholder="Date Tested">
-                                            </div>  
-                                            <div class="col-md-4">
-                                                <label class="form-label">Date Loaded:</label>
-                                                <input type="text" class="form-control" placeholder="Date Loaded">
-                                            </div>  
-                                            <div class="col-md-4">
-                                                <label class="form-label">Remark:</label>
-                                                <input type="text" class="form-control" placeholder="Remark">
-                                            </div> 
-                                        </div>
-                                        <hr> 
-                                    </form>
-                                </div>
-                            </div> 
-                             
-                             
-                            <div class="card mb-4 shadow-sm">
-                                <div class="card-header bg-primary text-white">
-                                    <span class="fw-bold">TEST RESULT</span>
-                                </div>
-                                <div class="card-body"> 
-                                    <table class="table table-bordered align-middle text-center">
-                                        <thead class="table-light">
-                                            <tr> 
-                                                <th colspan="9">รายการทดสอบ</th>
-                                            </tr>
-                                            <tr>
-                                                <th>M110A</th>
-                                                <th>M110B</th>
-                                                <th>M110C</th>
-                                                <th>M110D</th>
-                                                <th>M111A</th>
-                                                <th>M111B</th>
-                                                <th>M111C</th>
-                                                <th>TEST METHOD</th>
-                                                <th>SPECIFICATION</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- Lot / Quantity -->
-                                            <tr>
-                                                <td>Lot No.</td> 
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>  
-                                                <td><input type="text" class="form-control"></td>  
-                                            </tr>
-                                            <tr>
-                                                <td>Quantity (Kgs.)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td>  
-                                            </tr>
-                                            <tr>
-                                                <td>Bale No.</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td>  
-                                            </tr>
-                                            <!-- RAW POLYMER PROPERTIES -->
-                                            <tr class="table-secondary text-start fw-bold">
-                                                <td colspan="9">RAW POLYMER PROPERTIES</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ash (%wt)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>ASTM D1278-91a</td>
-                                                <td>0.30 max</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Volatile Matter (%wt)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>ASTM D5668-21</td>
-                                                <td>0.50 max</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nitrogen (%wt)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>ASTM D3533-05</td>
-                                                <td>0.50 max</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mooney Viscosity (MS 1+4 @100°C)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>ISO 289-1</td>
-                                                <td>80 min</td>
-                                            </tr>
-                                            <tr>
-                                                <td>%Graft of PMMA (%wt)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>¹H NMR Test Method</td>
-                                                <td>30 ± 2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Lovibond Color</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>ASTM D3157-05</td>
-                                                <td>-</td>
-                                            </tr>
-                                            <!-- VALCANISATE PROPERTIES -->
-                                            <tr class="table-secondary text-start fw-bold">
-                                                <td colspan="9">VALCANISATE PROPERTIES</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="9" class="text-start">
-                                                    <small>Polymer : 100, S : 2.1, St. Acid : 0.7, ZnO : 3.5, TMQ : 0.7, CBS : 0.5, 20’ @140°C</small>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tensile Strength (MPa)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>ASTM D412 DIE C</td>
-                                                <td>26.50 min</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Elongation @Break (%)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>ASTM D412 DIE C</td>
-                                                <td>-</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Modulus @100% (MPa)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>ASTM D412 DIE C</td>
-                                                <td>2.20 min</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Hardness (Shore A)</td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td><input type="text" class="form-control"></td>
-                                                <td><input type="text" class="form-control"></td> 
-                                                <td>ISO 7619</td>
-                                                <td>65.0 min</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div> 
-                            <!-- ปุ่มบันทึก / ยกเลิก -->
-                            <div class="text-end mt-4">
-                                <button class="btn btn-secondary me-2" type="reset">ยกเลิก</button>
-                                <button id="btnSave" class="btn btn-primary" type="button">บันทึก</button>
-                            </div>
-                             
-                              
-                            
-                        </div>
-                    </div>
-                </main> 
-            </div>
-        </div> 
- 
-
-
-        <script src="js/jquery-3.5.1.min.js"></script>   
-        <script src="js/app.js"></script>  
-
-        <script src="js/jquery.dataTables.min.js"></script>
-        <script src="js/dataTables.bootstrap5.min.js"></script>
-        <script src="js/select2.min.js"></script>
-        <script src="js/bootstrap-datepicker.min.js"></script>
-        <script src="js/bootstrap-datepicker.th.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
-        <script src="js/leftMenu.js"></script>
-        <script src="js/navTop.js"></script> 
-        <script>   
-            createSidebar("app"); 
-            createNavTop("topbar"); 
-            $(document).ready(function() { 
-                $('.js-example-basic-multiple').select2();   
-                  
-
+    <body>
+        <div class="a4-page p-4">
+            <!-- Header -->
+            <div class="text-center mb-3">
                 
-                $('.date').datepicker({ 
-                    language: 'th',
-                    format: 'dd-mm-yyyy',
-                    clearBtn: false, 
-                    calendarWeeks: false,
-                    autoclose: true,
-                    todayHighlight: true, 
-                    toggleActive: true
-                }); 
-                $('.timepicker').timepicker({
-                    showMeridian: true,
-                    minuteStep: 5,
-                    use24hours: true,
-                    timeFormat: 'H:i',
-                    defaultTime: 'current'
-                });
-            });   
-        </script> 
-      
-       
+                <h5 class="fw-bold text-uppercase"><img src="img/mmg2.jpg" alt="MMG Logo" class="logo mb-1"> MUANG MAI GUTHRIE PUBLIC COMPANY LIMITED</h5>
+                <p class="small mb-0">SURAT FACTORY : 7 Moo 8, Klong Cha-Eun, Phanom, Surat-thani, Thailand 84250</p>
+                <p class="small mb-0">THUNGSONG FACTORY : 329 Moo 2, Thumyai, Thungsong, Nakhonsri-Thammarat, Thailand 80110</p>
+                <p class="small fw-bold mt-1">CR-QCD-53/2</p>
+            </div>
+            <h6 class="text-center fw-bold text-decoration-underline mb-3">CERTIFICATE OF ANALYSIS</h6>
+            <!-- Info Section -->
+            <table class="table table-borderless small mb-4">
+                <tbody>
+                    <tr>
+                        <td class="w-25">Contract No</td>
+                        <td><input type="text" class="form-control form-control-sm" value="L0064-25-06 (060-05)"></td>
+                    </tr>
+                    <tr>
+                        <td>Buyer</td>
+                        <td><input type="text" class="form-control form-control-sm" value="WINHOLD INTERNATIONAL CO., LTD."></td>
+                    </tr>
+                    <tr>
+                        <td>Rubber Grade</td>
+                        <td><input type="text" class="form-control form-control-sm" value="SYNTHETIC GRAFTED RUBBER (MG 30)"></td>
+                    </tr>
+                    <tr>
+                        <td>Quantity (KGS.)</td>
+                        <td><input type="text" class="form-control form-control-sm" value="8.00 METRIC TONS (8 PALLETS)"></td>
+                    </tr>
+                    <tr>
+                        <td>Packing</td>
+                        <td><input type="text" class="form-control form-control-sm" value="SURAT FACTORY"></td>
+                    </tr>
+                    <tr>
+                        <td>Factory Location</td>
+                        <td><textarea class="form-control form-control-sm" rows="2">2-PLY BROWN PAPER BAG LINED WITH CLEAR LDPE SHEET. INTERNALLY PACKED ON 1.00 METRIC TON ON PLASTIC PALLET BASE UNIT (30 BALES PER PALLET)</textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Destination</td>
+                        <td><input type="text" class="form-control form-control-sm" value="KEELUNG PORT, TAIWAN"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Production</td>
+                        <td><input type="text" class="form-control form-control-sm" value="24/05/2025 - 14/06/2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Date Tested</td>
+                        <td><input type="text" class="form-control form-control-sm" value="25/05/2025 - 15/06/2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Date Loaded</td>
+                        <td><input type="text" class="form-control form-control-sm" value="05/07/2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Remark</td>
+                        <td><input type="text" class="form-control form-control-sm" value="P.O. BB25351"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Test Result Table -->
+            <table class="table table-bordered text-center align-middle small">
+                <thead>
+                    <tr class="table-light">
+                        <th rowspan="2">Lot No.</th>
+                        <th colspan="7">TEST RESULT</th>
+                        <th rowspan="2">TEST METHOD</th>
+                        <th rowspan="2">SPECIFICATION</th>
+                    </tr>
+                    <tr>
+                        <th>M110A</th>
+                        <th>M110B</th>
+                        <th>M110C</th>
+                        <th>M110D</th>
+                        <th>M111A</th>
+                        <th>M111B</th>
+                        <th>M111C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quantity Kgs.</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="1,000"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>Bale No.</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="1-30"></td>
+                    </tr>
+                    <tr class="table-secondary fw-bold text-start">
+                        <td colspan="10">RAW POLYMER PROPERTIES</td>
+                    </tr>
+                    <tr>
+                        <td>Ash (%wt)</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="0.12"></td>
+                        <td>ASTM D1278-91a</td>
+                        <td>0.30 max</td>
+                    </tr>
+                    <tr>
+                        <td>Volatile Matter (%wt)</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="0.26"></td>
+                        <td>ASTM D5668-21</td>
+                        <td>0.50 max</td>
+                    </tr>
+                    <tr>
+                        <td>Nitrogen (%wt)</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="0.06"></td>
+                        <td>ASTM D3533-05</td>
+                        <td>0.50 max</td>
+                    </tr>
+                    <tr>
+                        <td>Mooney Viscosity (MS 1+4 @100°C)</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="86.5"></td>
+                        <td>ISO 289-1, ASTM D1646-19a</td>
+                        <td>80 min</td>
+                    </tr>
+                    <tr>
+                        <td>%Graft of PMMA (%wt)</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="28.62"></td>
+                        <td>¹H NMR Test Method</td>
+                        <td>30 ± 2</td>
+                    </tr>
+                    <tr>
+                        <td>Lovibond Color</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="5.0"></td>
+                        <td>ASTM D3157-05</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="table-secondary fw-bold text-start">
+                        <td colspan="10">VALCANISATE PROPERTIES</td>
+                    </tr>
+                    <tr>
+                        <td colspan="10" class="text-start">
+                            <small>Polymer : 100, S : 2.1, St. Acid : 0.7, ZnO : 3.5, TMQ : 0.7, CBS : 0.5, 20’ @140°C</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tensile Strength (MPa)</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="26.72"></td>
+                        <td>ASTM D412 DIE C</td>
+                        <td>26.50 min</td>
+                    </tr>
+                    <tr>
+                        <td>Elongation @Break (%)</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="498.00"></td>
+                        <td>ASTM D412 DIE C</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Modulus @100% (MPa)</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="2.63"></td>
+                        <td>ASTM D412 DIE C</td>
+                        <td>2.20 min</td>
+                    </tr>
+                    <tr>
+                        <td>Hardness (Shore A)</td>
+                        <td colspan="7"><input type="text" class="form-control form-control-sm" value="65.90"></td>
+                        <td>ISO 7619</td>
+                        <td>65.0 min</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Footer -->
+            <div class="mt-4 text-center">
+                <p class="small mb-1 fst-italic">We certify that all the tests which we have carried out on the samples submitted to us are consistent with the description and the Synthetic Grafted Rubber grading stated at the top of this certificate.</p>
+                <div class="mt-4">
+                    <p class="fw-bold mb-0">.................................................</p>
+                    <p class="small mb-0">Authorised Signature</p>
+                    <p class="small">( QC SUPERVISOR )</p>
+                    <p class="small">Date: ...... / ...... / 2025</p>
+                </div>
+                <p class="small mt-3">Page...1...of...1...</p>
+            </div>
+        </div>
+
+        <style>
+            body {
+            font-family: "Sarabun", sans-serif;
+            background-color: #f5f5f5;
+            color: #000;
+            }
+
+            .a4-page {
+            background: #fff;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            box-shadow: 0 0 4px rgba(0,0,0,0.2);
+            padding: 15mm;
+            }
+
+            .logo {
+            width: 120px;
+            }
+
+            .table td, .table th {
+            vertical-align: middle;
+            padding: 4px;
+            }
+
+            input.form-control, textarea.form-control {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            border-radius: 0;
+            padding: 0;
+            font-size: 0.85rem;
+            text-align: left;
+            }
+
+            input:focus, textarea:focus {
+            box-shadow: none;
+            outline: none;
+            border-bottom: 1px solid #000;
+            }
+
+            .table-bordered th, .table-bordered td {
+            border: 1px solid #000 !important;
+            }
+
+            .table-secondary {
+            background-color: #e8e8e8 !important;
+            }
+
+            /* Print Mode */
+            @media print {
+            body {
+                background: #fff;
+            }
+            .a4-page {
+                box-shadow: none;
+                margin: 0;
+                padding: 10mm;
+                width: 100%;
+            }
+            input, textarea {
+                border: none !important;
+            }
+            }
+
+        </style>
     </body>
 </html>
