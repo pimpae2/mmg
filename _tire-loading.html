@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="MMG">
+        <meta name="author" content="MMG"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" href="img/mmg-logo.png" />
+        
+        <title>MMG</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css"/>   
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>   
+        <link href="css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"/>  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </head>
+    <body> 
+        <div class="wrapper">
+            <div id="app" style="background-color: #ffffff;"></div>
+            <div class="main">
+                <div id="topbar"></div>
+                <main class="content">
+                    <div class="container-fluid p-0">
+                        <div class="col">
+                            <div class="row">
+                                <div class="text-hx">
+                                    <h4><i class="far fa-file-alt"></i> ใบโหลดยาง</h4>
+                                </div>
+                            </div>   
+                             
+                             
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header bg-primary text-white">
+                                    <span class="fw-bold">ฝ่ายควบคุมคุณภาพ</span>
+                                </div>
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="row g-3">
+                                            <div class="col-md-4">
+                                                <label class="form-label">Contract No:</label>
+                                                <input type="text" class="form-control" placeholder="Contract No">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label">Buyer:</label>
+                                                <input type="text" class="form-control" placeholder="Buyer:">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label">Grade:</label>
+                                                <input type="text" class="form-control" placeholder="Grade:">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label">Quantity:</label>
+                                                <input type="text" class="form-control" placeholder="Quantity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label">Packing:</label>
+                                                <select class="form-select">
+                                                    <option>Packing</option>
+                                                    <option>Packing</option>
+                                                    <option>Packing</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label">Ex-Fact Date:</label>
+                                                <input type="text" class="form-control" placeholder="Ex-Fact Date:">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered align-middle text-center">
+                                                <thead class="table-light align-middle">
+                                                    <tr>
+                                                        <th rowspan="2">Lot No.</th>
+                                                        <th rowspan="2">Pallet No.</th>
+                                                        <th colspan="2">Weight (KGS.)</th>
+                                                        <th colspan="3">Packing</th>
+                                                        <th rowspan="2">Lot No.</th>
+                                                        <th rowspan="2">Pallet No.</th>
+                                                        <th colspan="2">Weight (KGS.)</th>
+                                                        <th colspan="3">Packing</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>33.33</th>
+                                                        <th>35.00</th>
+                                                        <th>Normal</th>
+                                                        <th>Thick Poly</th>
+                                                        <th>2-Poly Brown</th>
+                                                        <th>33.33</th>
+                                                        <th>35.00</th>
+                                                        <th>Normal</th>
+                                                        <th>Thick Poly</th>
+                                                        <th>2-Poly Brown</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>R074</td>
+                                                        <td>B</td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td>ENR B</td>
+                                                        <td>R106</td>
+                                                        <td>A</td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td>ENR B</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>R098</td>
+                                                        <td>B</td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td>ENR B</td>
+                                                        <td>R108</td>
+                                                        <td>A</td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td><input type="checkbox" class="form-check-input"></td>
+                                                        <td>ENR B</td>
+                                                    </tr>
+                                                    <!-- เพิ่มแถวตามต้องการ -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <hr>
+                                        <div class="card mb-4"> 
+                                            <div class="card-body">
+                                                <div class="row g-3">
+                                                    <div class="col-md-3">
+                                                        <label class="form-label">ผู้ตรวจสอบ</label>
+                                                        <input type="text" class="form-control" placeholder="ชื่อผู้ตรวจสอบ">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label class="form-label">ตำแหน่ง</label>
+                                                        <input type="text" class="form-control" placeholder="เช่น QC, Supervisor">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label class="form-label">วันที่ตรวจสอบ</label>
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label class="form-label">หมายเหตุ</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card mb-4"> 
+                                            <div class="card-body table-responsive">
+                                                <table class="table table-bordered align-middle text-center">
+                                                    <thead class="table-light align-middle">
+                                                        <tr> 
+                                                            <th colspan="4">การเปลี่ยนแปลงบรรจุภัณฑ์</th> 
+                                                            <th colspan="3">การตรวจสอบการเปลี่ยนแปลงบรรจุภัณฑ์และป้ายชี้บ่ง</th>
+                                                            <th>ผู้ตรวจสอบ </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Lot No.</th>
+                                                            <th>Pallet No.</th>
+                                                            <th>ถุงบรรจุเดิม</th>
+                                                            <th>การเปลี่ยนแปลงถุงบรรจุ</th>
+                                                            <th>ถูกต้อง</th>
+                                                            <th>ไม่ถูกต้อง</th>
+                                                            <th>การแก้ไข</th>
+                                                            <th>(Sup./Staff SKM)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!-- แถวตัวอย่าง สามารถเพิ่มซ้ำได้ -->
+                                                        <tr>
+                                                            <td><input type="text" class="form-control text-center" name="lotNo[]"></td>
+                                                            <td><input type="text" class="form-control text-center" name="palletNo[]"></td>
+                                                            <td><input type="text" class="form-control" name="oldPacking[]"></td>
+                                                            <td><input type="text" class="form-control" name="newPacking[]"></td>
+                                                            <td><input type="checkbox" class="form-check-input" name="correct[]"></td>
+                                                            <td><input type="checkbox" class="form-check-input" name="incorrect[]"></td>
+                                                            <td><input type="text" class="form-control" name="correction[]"></td>
+                                                            <td><input type="text" class="form-control" name="inspector[]"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control text-center" name="lotNo[]"></td>
+                                                            <td><input type="text" class="form-control text-center" name="palletNo[]"></td>
+                                                            <td><input type="text" class="form-control" name="oldPacking[]"></td>
+                                                            <td><input type="text" class="form-control" name="newPacking[]"></td>
+                                                            <td><input type="checkbox" class="form-check-input" name="correct[]"></td>
+                                                            <td><input type="checkbox" class="form-check-input" name="incorrect[]"></td>
+                                                            <td><input type="text" class="form-control" name="correction[]"></td>
+                                                            <td><input type="text" class="form-control" name="inspector[]"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="8"><button class="btn btn-success">เพิ่ม</button></td> 
+                                                        </tr> 
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div> 
+                             
+                             
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header bg-primary text-white">
+                                    <span class="fw-bold">การตรวจสอบผลิตภัณฑ์ก่อนการส่งมอบ</span>
+                                </div>
+                                <div class="card-body"> 
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered align-middle text-center">
+                                            <thead class="table-light align-middle">
+                                                <tr>
+                                                    <th rowspan="2" class="text-center">
+                                                        รายการตรวจสอบผลิตภัณฑ์ก่อนการตรวจสอบ <br>
+                                                        (กาเครื่องหมายถูก ในช่องที่มีการตรวจสอบ)
+                                                    </th> 
+                                                    <th colspan="2">EXP</th> 
+                                                    <th colspan="2">Store Clerk</th> 
+                                                </tr>
+                                                <tr>
+                                                    <th>ถูกต้อง</th> 
+                                                    <th>ไม่ถูกต้อง</th> 
+                                                    <th>ถูกต้อง</th> 
+                                                    <th>ไม่ถูกต้อง</th> 
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-start">1. สินค้ามีจำนวน และ หมายเลข LOT NO. ตรงตามที่ระบุ</td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                                <tr>
+                                                    <td class="text-start">
+                                                        2. น้ำหนักแท่งยางตรงตามใบสั่งสินค้า  
+                                                        <input type="checkbox" class="form-check-input" name="correct[]"> 33.33 KGS 
+                                                        <input type="checkbox" class="form-check-input" name="correct[]"> 35.00 KGS
+                                                    </td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                                <tr>
+                                                    <td class="text-start">
+                                                        3. สินค้ามี Packing ตรงตามที่ระบุ  
+                                                        <input type="checkbox" class="form-check-input" name="correct[]"> Normal Poly
+                                                        <input type="checkbox" class="form-check-input" name="correct[]"> Thick Poly
+                                                        <input type="checkbox" class="form-check-input" name="correct[]"> 2-Poly Brown
+                                                    </td>
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr>  
+                                                <tr>
+                                                    <td class="text-start">
+                                                        4. สินค้ามีการบรรจุตรงตามใบสั่งสินค้า
+                                                        <input type="checkbox" class="form-check-input" name="correct[]"> Pallet
+                                                        <input type="checkbox" class="form-check-input" name="correct[]"> Loose Bale
+                                                        <input type="checkbox" class="form-check-input" name="correct[]"> Shrinkwrapped
+                                                    </td>
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr>  
+                                                <tr>
+                                                    <td class="text-start">
+                                                        5. การตรวจสอบสภาพการบรรจุ <br>
+                                                        -Pallet สภาพลังมีความเรียบร้อย แข็งแรง ไม่แตกหัก,เหล็กรัดลังแข็งแข็งแรง ไม่ขาด <br>
+                                                        -Pallet ความสูงของยางภายในถังปกติ (สูงมากกว่าขอบถัน 2 นิว) <br>
+                                                        -Shriakurapped ถุงวัดลังมีความเรียบร้อย ไม่มีการฉีกขาด <br>
+                                                        -Cargo Stretch Film รัดแน่นมีความเรียบร้อย ไม่มีการฉีกชาล
+                                                    </td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                                <tr>
+                                                    <td rowspan="5" class="text-start">
+                                                        5. การตรวจสอบสภาพการบรรจุ  
+                                                        <br>  <br>
+                                                        -Pallet สภาพลังมีความเรียบร้อย แข็งแรง ไม่แตกหัก,เหล็กรัดลังแข็งแข็งแรง ไม่ขาด  <br>  <br>
+                                                        -Pallet ความสูงของยางภายในถังปกติ (สูงมากกว่าขอบถัน 2 นิว)  <br>  <br>
+                                                        Shriakurapped ถุงวัดลังมีความเรียบร้อย ไม่มีการฉีกขาด  <br>  <br>
+                                                        -Cargo Stretch Film รัดแน่นมีความเรียบร้อย ไม่มีการฉีกชาล
+                                                    </td> 
+                                                    <td colspan="5"></td>  
+                                                </tr> 
+                                                <tr> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                                <tr> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                                <tr> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                                <tr> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                                <tr>
+                                                    <td class="text-start">6. ความสะอาดของภาชนะบรรจุ สะอาค ไม่ปรากฏรา/ มอด หรือ ฝุ่น</td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                                <tr>
+                                                    <td class="text-start">7.เครื่องหมายสินค้า (Making) ครบ ชัดเจน ถูกต้องตามใบสั่งสินค้า</td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                                <tr>
+                                                    <td class="text-start">8. ไม่ปรากฏความเสียหายเกิดขึ้นระหว่างการสำเลืยงสินค้า ณ วันส่งมอม</td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                    <td><input type="checkbox" class="form-check-input" name="correct[]"></td> 
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <br>
+                                    
+                                    <div class="row g-3">
+                                        <div class="col-md-12">
+                                            <label class="form-label">การแก้ไข :</label>
+                                            <input type="text" class="form-control" placeholder="การแก้ไข">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label class="form-label">PRODUCTION SUPERVISOR INSPECTION :</label>
+                                            <input type="text" class="form-control" placeholder="PRODUCTION SUPERVISOR INSPECTION:">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Date:</label>
+                                            <input type="date" class="form-control" placeholder="Date:">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label class="form-label">STORE CLERK INSPECTION:</label>
+                                            <input type="text" class="form-control" placeholder="STORE CLERK INSPECTION:">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Date:</label>
+                                            <input type="date" class="form-control" placeholder="Date:">
+                                        </div>
+                                    </div>
+                                    <!-- ปุ่มบันทึก / ยกเลิก -->
+                                    <div class="text-end mt-4">
+                                        <button class="btn btn-secondary me-2" type="reset">ยกเลิก</button>
+                                        <button id="btnSave" class="btn btn-primary" type="button">บันทึก</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                        </div>
+                    </div>
+                </main> 
+            </div>
+        </div> 
+ 
+
+
+        <script src="js/jquery-3.5.1.min.js"></script>   
+        <script src="js/app.js"></script>  
+
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap5.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script src="js/bootstrap-datepicker.th.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+        <script src="js/leftMenu.js"></script>
+        <script src="js/navTop.js"></script> 
+        <script>   
+            createSidebar("app"); 
+            createNavTop("topbar"); 
+            $(document).ready(function() { 
+                $('.js-example-basic-multiple').select2();   
+                  
+
+                
+                $('.date').datepicker({ 
+                    language: 'th',
+                    format: 'dd-mm-yyyy',
+                    clearBtn: false, 
+                    calendarWeeks: false,
+                    autoclose: true,
+                    todayHighlight: true, 
+                    toggleActive: true
+                }); 
+                $('.timepicker').timepicker({
+                    showMeridian: true,
+                    minuteStep: 5,
+                    use24hours: true,
+                    timeFormat: 'H:i',
+                    defaultTime: 'current'
+                });
+            });   
+        </script> 
+      
+       
+    </body>
+</html>
