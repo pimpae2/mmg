@@ -6,6 +6,81 @@
         <title>Certificate of Analysis - MMG</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     </head>
+
+    <style>
+        body {
+        font-family: "Sarabun", sans-serif;
+        background-color: #f5f5f5;
+        color: #000;
+        }
+
+        .a4-page {
+        background: #fff;
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        box-shadow: 0 0 4px rgba(0,0,0,0.2);
+        padding: 15mm;
+        }
+
+        .logo {
+        width: 120px;
+        }
+
+        .table td, .table th {
+        vertical-align: middle;
+        padding: 4px;
+        }
+
+        input.form-control, textarea.form-control {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        padding: 0;
+        font-size: 0.85rem;
+        text-align: left;
+        }
+
+        input:focus, textarea:focus {
+        box-shadow: none;
+        outline: none;
+        border-bottom: 1px solid #000;
+        }
+
+        .table-bordered th, .table-bordered td {
+        border: 1px solid #000 !important;
+        }
+
+        .table-secondary {
+        background-color: #e8e8e8 !important;
+        }
+        .signaturex{ 
+            max-height: 80px;
+            margin-bottom: -5px;
+        }
+        .signaturex img{ 
+            max-height: 60px;
+        } 
+
+
+
+        /* Print Mode */
+        @media print {
+        body {
+            background: #fff;
+        }
+        .a4-page {
+            box-shadow: none;
+            margin: 0;
+            padding: 10mm;
+            width: 100%;
+        }
+        input, textarea {
+            border: none !important;
+        }
+        }
+
+    </style>
     <body>
         <div class="a4-page p-4">
             <!-- Header -->
@@ -41,7 +116,7 @@
                         <td>SURAT FACTORY</td>
                     </tr>
                     <tr>
-                        <td>Factory Location</td>
+                        <td style="vertical-align: top !important;">Factory Location</td>
                         <td>
                             2-PLY BROWN PAPER BAG LINED WITH CLEAR LDPE SHEET. INTERNALLY PACKED ON 1.00 METRIC TON ON PLASTIC PALLET BASE UNIT (30 BALES PER PALLET)
                         </td>
@@ -69,7 +144,7 @@
                 </tbody>
             </table>
             <!-- Test Result Table -->
-            <table class="table table-bordered text-center align-middle small">
+            <table class="table table-bordered text-center tablex align-middle small">
                 <thead>
                     <tr class="table-light">
                         <th rowspan="2">Lot No.</th>
@@ -87,16 +162,16 @@
                         <th>M111C</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody style="font-size: 11px;">
                     <tr>
                         <td>Quantity Kgs.</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td style="border-bottom: 0px solid black !important;">&nbsp;</td>
+                        <td style="border-bottom: 0px solid black !important;">&nbsp;</td>
+                        <td style="border-bottom: 0px solid black !important;">&nbsp;</td>
+                        <td style="border-bottom: 0px solid black !important;">&nbsp;</td>
+                        <td style="border-bottom: 0px solid black !important;">&nbsp;</td>
+                        <td style="border-bottom: 0px solid black !important;">&nbsp;</td>
+                        <td style="border-bottom: 0px solid black !important;">&nbsp;</td>
                         <td rowspan="3"></td>
                         <td rowspan="3"></td>
                     </tr>
@@ -256,6 +331,9 @@
                 <div class="col-5">
                     <div class="mt-4 text-center"> 
                         <div class="mt-4">
+                            <div class="position-relative signaturex img" >
+                                <img src="img/di.png" alt="signature">
+                            </div>
                             <p class="fw-bold mb-0">.................................................</p>
                             <p class="small mb-0">Authorised Signature</p>
                             <p class="small">( QC SUPERVISOR )</p>
@@ -266,71 +344,5 @@
                 </div>
             </div>
         </div>
-
-        <style>
-            body {
-            font-family: "Sarabun", sans-serif;
-            background-color: #f5f5f5;
-            color: #000;
-            }
-
-            .a4-page {
-            background: #fff;
-            width: 210mm;
-            min-height: 297mm;
-            margin: 0 auto;
-            box-shadow: 0 0 4px rgba(0,0,0,0.2);
-            padding: 15mm;
-            }
-
-            .logo {
-            width: 120px;
-            }
-
-            .table td, .table th {
-            vertical-align: middle;
-            padding: 4px;
-            }
-
-            input.form-control, textarea.form-control {
-            border: none;
-            border-bottom: 1px solid #ccc;
-            border-radius: 0;
-            padding: 0;
-            font-size: 0.85rem;
-            text-align: left;
-            }
-
-            input:focus, textarea:focus {
-            box-shadow: none;
-            outline: none;
-            border-bottom: 1px solid #000;
-            }
-
-            .table-bordered th, .table-bordered td {
-            border: 1px solid #000 !important;
-            }
-
-            .table-secondary {
-            background-color: #e8e8e8 !important;
-            }
-
-            /* Print Mode */
-            @media print {
-            body {
-                background: #fff;
-            }
-            .a4-page {
-                box-shadow: none;
-                margin: 0;
-                padding: 10mm;
-                width: 100%;
-            }
-            input, textarea {
-                border: none !important;
-            }
-            }
-
-        </style>
     </body>
 </html>
